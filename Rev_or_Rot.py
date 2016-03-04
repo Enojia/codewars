@@ -4,7 +4,7 @@ def revrot(strng, sz):
     if sz <= 0 or sz > len(strng) or strng =="":
         return ""
 
-    array = [strng[i:i+2] for i in range(0, len(strng), 2)]
+    array = [strng[i:i+sz] for i in range(0, len(strng), sz)]
 
     if len(array[len(array)-1]) < sz:
         array.pop()
@@ -27,6 +27,6 @@ def revrot(strng, sz):
     return "".join(result)
 
 
-lst = revrot("1234567", 2)
+lst = revrot("733049910872815764", 5)
 print lst
 
