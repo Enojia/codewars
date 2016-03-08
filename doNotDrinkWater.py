@@ -31,7 +31,7 @@ def separate_liquids(glass):
     tempGlass = [init_liquid(liquid) for liquid in tempGlass]
     sortedGlass = insertionSort(tempGlass)
     for i in range(0,len(glass)):
-        for j in range(0, 4):
+        for j in range(0, len(glass[i]):
             glass[i][j] = sortedGlass.pop().data
     return glass
 
