@@ -15,7 +15,8 @@ def done_or_notDone(board):
 
     for i in range(0,7,3):
         for j in range(0,7,3):
-            tempList = board[0+i:2+i, 0+j:2+j)]
+            print "debug"
+            tempList = board[0+i:2+i, 0+j:2+j]
             checkRuleA(tempList, temp)
 
     def checkRuleA(lst, temp):

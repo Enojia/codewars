@@ -20,4 +20,4 @@ def longest_pallindrome(s):
 
     return max(counts)
 
-print longest_pallindrome("aabccbaa")
+print longest_pallindrome('baa')
