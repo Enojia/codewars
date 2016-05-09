@@ -16,6 +16,7 @@ class VigenereCipher(object):
                 j+=1
             else:
                 newMess.append(message[i])
+                j += 1
         return "".join(newMess)
 
 
@@ -46,6 +47,6 @@ def convertChar(mess, key, alphabet, encode):
 
 ##main function test
 
-cipher = VigenereCipher("helloworld", "abcdefghijklmnopqrstuvwxyz")
+cipher = VigenereCipher("password", "abcdefghijklmnopqrstuvwxyz")
 
-print cipher.encode("coding is fun")
+print cipher.encode("it's a shift cipher")
